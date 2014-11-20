@@ -1,0 +1,23 @@
+From 5ce7fb677224d51ba95adeb8cabea34952660e1e Mon Sep 17 00:00:00 2001
+From: Marc Hanheide <marc@hanheide.net>
+Date: Thu, 20 Nov 2014 23:13:38 +0000
+Subject: [PATCH] stop stripping libav
+
+---
+ debian/rules.em | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/debian/rules.em b/debian/rules.em
+index 06777bd..3edbb42 100755
+--- a/debian/rules.em
++++ b/debian/rules.em
+@@ -57,3 +57,6 @@ override_dh_auto_install:
+ 	# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+ 	if [ -f "@(InstallationPrefix)/setup.sh" ]; then . "@(InstallationPrefix)/setup.sh"; fi && \
+ 	dh_auto_install
++
++override_dh_strip:
++	dh_strip -Xlibav
+-- 
+2.1.3
+
