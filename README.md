@@ -1,3 +1,28 @@
+## data_compression (hydro) - 0.0.3-1
+
+The packages in the `data_compression` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -t hydro -r hydro -y data_compression` on `Thu, 20 Nov 2014 23:18:32 -0000`
+
+These packages were released:
+- `catkinized_libav`
+- `libav_image_transport`
+- `mongodb_openni_compression`
+- `rosbag_openni_compression`
+
+Version of package(s) in repository `data_compression`:
+- upstream repository: https://github.com/strands-project/data_compression.git
+- release repository: https://github.com/strands-project-releases/data_compression.git
+- rosdistro version: `0.0.3-0`
+- old version: `0.0.3-0`
+- new version: `0.0.3-1`
+
+Versions of tools used:
+- bloom version: `0.5.12`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.10.32`
+- rosdistro version: `0.3.6`
+- vcstools version: `0.1.35`
+
+
 ## data_compression (hydro) - 0.0.3-0
 
 The packages in the `data_compression` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --non-interactive -t hydro -r hydro data_compression` on `Wed, 19 Nov 2014 08:51:59 -0000`
