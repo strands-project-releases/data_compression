@@ -1,16 +1,16 @@
-data_compression
-================
+rosbag_openni_compression
+=========================
 
-Video encoding for OpenNI topics to record them to a rosbag and replay through reconstruction of point clouds.
+To use this, you may have to clone https://github.com/ros-perception/image_transport_plugins/tree/hydro-devel.
+The apt-get package did not work for me for some reason. You also have to get https://github.com/nilsbore/libav_image_transport/tree/catkinized_libav, specifically the branch `catkinized_libav`. 
 
-Includes libav_image_transport by Dominique Hunziker: https://github.com/rapyuta/libav_image_transport.
+At the moment, you have to specify one camera to compress,
+either `head_xtion` or `chest_xtion`, with the `camera` parameter to `record.launch`. The commands are
 
-## Compression comparison
+* `roslaunch rosbag_openni_compression record.launch file:=/path/to/file.bag camera:=head_xtion`
 
-To put the compression gains of this library in context, here is a comparison to the default ROS image compression and the uncompressed images.
+to record a rosbag in the file `/path/to/file.bag` and
 
-![Alt text](https://github.com/nilsbore/data_compression/blob/hydro-devel/data/compression_comparison.png "Compression rates for the different compressed and uncompressed image representation.")
+* `roslaunch rosbag_openni_compression play.launch file:=/path/to/file.bag camera:=head_xtion`
 
-Both the ffv1 codec and the theora codec takes up quite a lot of CPU when compressing the OpenNI streams at 30 fps. The following CPU usages were measured on my Core i7 laptop.
-
-![Alt text](https://github.com/nilsbore/data_compression/blob/hydro-devel/data/cpu_usage_comparison.png "CPU Usage of ffv1 and theora codec on my machine.")
+to play the file back, together with reconstruction of all OpenNI images and pointclouds. There is nothing limiting this to just one camera except the launch files atm.
