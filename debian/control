@@ -1,0 +1,12 @@
+Source: ros-hydro-libav-image-transport
+Section: misc
+Priority: extra
+Maintainer: Nils Bore <nbore@kth.se>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-hydro-catkin, ros-hydro-catkinized-libav, ros-hydro-dynamic-reconfigure, ros-hydro-genmsg, ros-hydro-image-transport
+Homepage: https://github.com/dominiquehunziker/libav_image_transport
+Standards-Version: 3.9.2
+
+Package: ros-hydro-libav-image-transport
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-hydro-catkinized-libav, ros-hydro-dynamic-reconfigure, ros-hydro-genmsg, ros-hydro-image-transport
+Description: Image transport plugin using libav to compress images.
