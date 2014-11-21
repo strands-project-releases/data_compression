@@ -2,6 +2,11 @@
 Changelog for package libav_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.5 (2014-11-21)
+------------------
+* Tried to link all the libraries explicitly instead
+* Contributors: Nils Bore
+
 0.0.4 (2014-11-21)
 ------------------
 * Commented hihde library symbols
