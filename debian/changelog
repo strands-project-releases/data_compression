@@ -1,0 +1,28 @@
+ros-hydro-rosbag-openni-compression (0.0.5-1precise) precise; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-hydro-rosbag-openni-compression (0.0.4-1precise) precise; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-hydro-rosbag-openni-compression (0.0.3-1precise) precise; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-hydro-rosbag-openni-compression (0.0.1-1precise) precise; urgency=high
+
+  * Corrected maintainer's in packages
+  * Added openni_wrapper as a run depend since the playback depends on that
+  * Put the rosbag_openni_compression into its own folder
+  * Contributors: Nils Bore
+
+ -- Nils Bore <nbore@kth.se>  Fri, 14 Nov 2014 00:00:00 -0000
+
+
