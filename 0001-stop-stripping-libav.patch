@@ -1,4 +1,4 @@
-From 10569bb8a8610bfc77fb00fc9057ef57a83abf3f Mon Sep 17 00:00:00 2001
+From 6faf079233c3af947f61c9c4bcdf24eb1d40c846 Mon Sep 17 00:00:00 2001
 From: Marc Hanheide <marc@hanheide.net>
 Date: Thu, 20 Nov 2014 23:13:38 +0000
 Subject: [PATCH] stop stripping libav
