@@ -1,0 +1,12 @@
+Source: ros-hydro-rosbag-openni-compression
+Section: misc
+Priority: extra
+Maintainer: Nils Bore <nbore@kth.se>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-rosbag-openni-compression
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-image-transport-plugins, ros-hydro-libav-image-transport, ros-hydro-openni-wrapper, ros-hydro-rosbag
+Description: Launch files for storing compressed OpenNI topics in rosbag.
