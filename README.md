@@ -1,29 +1,16 @@
-mongodb_openni_compression
-==========================
+data_compression
+================
 
-Video encoding for OpenNI topics to record them to a mongodb_store, https://github.com/strands-project/mongodb_store.
+Video encoding for OpenNI topics to record them to a rosbag and replay through reconstruction of point clouds.
 
-Launch an action server that records video on demand by:
+Includes libav_image_transport by Dominique Hunziker: https://github.com/rapyuta/libav_image_transport.
 
-`roslaunch mongodb_openni_compression record_server.launch`
+## Compression comparison
 
-Then start the recording by calling the action server
+To put the compression gains of this library in context, here is a comparison to the default ROS image compression and the uncompressed images.
 
-`/record_camera`, e.g. by `rosrun actionlib axclient.py /record_camera`
+![Alt text](https://github.com/nilsbore/data_compression/blob/hydro-devel/data/compression_comparison.png "Compression rates for the different compressed and uncompressed image representation.")
 
-Supply the arguments `camera`, the namespace of the OpenNI camera used, e.g. `head_xtion`. Also supply `with_depth`, `with_rgb`,
-bool arguments for whether to record the depth and rgb.
+Both the ffv1 codec and the theora codec takes up quite a lot of CPU when compressing the OpenNI streams at 30 fps. The following CPU usages were measured on my Core i7 laptop.
 
-If you supply `head_xtion` as camera namespace, the depth topics will be saved as `/head_xtion_compressed_depth/libav`
-in the mongodb datacentre, in the roslog collection. The rgb is saved as `/head_xtion_compressed_rgb/theora`.
-
-If you want to replay them, use the `mongodb_play.py` utility:
-
-`rosrun mongodb_store mongodb_play.py /head_xtion_compressed_rgb/theora /head_xtion_compressed_depth/libav`
-
-You can use `image_transport republish` to convert the images back to raw format, or view the compressed
-streams directly in Rviz, by choosing either `libav` or `theora` as the transport hint.
-To convert the streams (assuming camera namespace was set to `head_xtion`:
-
-* `rosrun image_transport republish libav in:=/head_xtion_compressed_depth/libav raw out:=/head_xtion/depth/image_raw`
-* `rosrun image_transport republish theora in:=/head_xtion_compressed_rgb/theora raw out:=/head_xtion/rgb/image_raw`
+![Alt text](https://github.com/nilsbore/data_compression/blob/hydro-devel/data/cpu_usage_comparison.png "CPU Usage of ffv1 and theora codec on my machine.")
