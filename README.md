@@ -1,3 +1,28 @@
+## data_compression (indigo) - 0.0.8-0
+
+The packages in the `data_compression` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -t indigo -r indigo -n data_compression` on `Wed, 25 Feb 2015 13:34:31 -0000`
+
+These packages were released:
+- `catkinized_libav`
+- `libav_image_transport`
+- `mongodb_openni_compression`
+- `rosbag_openni_compression`
+
+Version of package(s) in repository `data_compression`:
+- upstream repository: https://github.com/strands-project/data_compression.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.0.8-0`
+
+Versions of tools used:
+- bloom version: `0.5.18`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.11.1`
+- rosdistro version: `0.4.0`
+- vcstools version: `0.1.36`
+
+
 ## data_compression (hydro) - 0.0.8-0
 
 The packages in the `data_compression` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --non-interactive -t hydro -r hydro data_compression` on `Sun, 23 Nov 2014 20:18:37 -0000`
