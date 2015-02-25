@@ -2,6 +2,11 @@
 Changelog for package libav_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.9 (2015-02-25)
+------------------
+* added catkinized_libav as dependency to make sure it's built prior to libav_image_transport
+* Contributors: Marc Hanheide
+
 0.0.8 (2014-11-23)
 ------------------
 
