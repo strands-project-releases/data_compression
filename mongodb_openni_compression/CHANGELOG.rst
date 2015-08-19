@@ -2,6 +2,9 @@
 Changelog for package mongodb_openni_compression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.10 (2015-08-19)
+-------------------
+
 0.0.9 (2015-02-25)
 ------------------
 * fixed the mongodb_play.py call
