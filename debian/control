@@ -1,0 +1,12 @@
+Source: ros-indigo-rosbag-openni-compression
+Section: misc
+Priority: extra
+Maintainer: Nils Bore <nbore@kth.se>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-actionlib, ros-indigo-actionlib-msgs, ros-indigo-catkin, ros-indigo-message-generation, ros-indigo-rospy
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-rosbag-openni-compression
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-actionlib, ros-indigo-actionlib-msgs, ros-indigo-image-transport-plugins, ros-indigo-libav-image-transport, ros-indigo-message-runtime, ros-indigo-openni-wrapper, ros-indigo-rosbag, ros-indigo-roslaunch-axserver, ros-indigo-rospy
+Description: Launch files for storing compressed OpenNI topics in rosbag.
