@@ -1,10 +1,10 @@
-From 9984045d051262885068d7f6a14069ab9a6c25a4 Mon Sep 17 00:00:00 2001
+From 55ad23dd3474338989648aea5f4aeded62ca3e79 Mon Sep 17 00:00:00 2001
 From: Marc Hanheide <marc@hanheide.net>
 Date: Wed, 25 Feb 2015 13:37:57 +0000
 Subject: [PATCH] re-added strip exclusion
 
 ---
- debian/rules.em | 3 +++
+ debian/rules.em |    3 +++
  1 file changed, 3 insertions(+)
 
 diff --git a/debian/rules.em b/debian/rules.em
@@ -19,5 +19,5 @@ index 991c991..5c0bdd6 100755
 +override_dh_strip:
 +	dh_strip -Xlibav
 -- 
-1.9.1
+1.7.9.5
 
