@@ -2,6 +2,14 @@
 Changelog for package rosbag_openni_compression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.10 (2015-08-19)
+-------------------
+* Calling the correct node
+* Renamed action
+* Fixed typo
+* Added action server for starting/stopping recording of camera topics to a rosbag
+* Contributors: Rares Ambrus
+
 0.0.9 (2015-02-25)
 ------------------
 
