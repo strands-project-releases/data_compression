@@ -1,0 +1,99 @@
+ros-indigo-mongodb-openni-compression (0.1.2-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Mon, 14 Dec 2015 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.1.1-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Mon, 14 Dec 2015 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.1.0-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Mon, 14 Dec 2015 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.11-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Mon, 14 Dec 2015 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.10-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Wed, 19 Aug 2015 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.9-0trusty) trusty; urgency=high
+
+  * fixed the mongodb_play.py call
+    The name of the RGB topic, under which it is stored in mongo, was wrong
+  * Contributors: Vojtech Novak
+
+ -- Nils Bore <nbore@kth.se>  Wed, 25 Feb 2015 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.8-0trusty) trusty; urgency=high
+
+  * Changed the topic of the recorded streams as well
+  * Added the option to change the compression type, switched default rgb to normal compressed
+  * Contributors: Nils Bore
+
+ -- Nils Bore <nbore@kth.se>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Sat, 22 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.4-0trusty) trusty; urgency=high
+
+  * Filled in the README
+  * Added a README file
+  * Changed the name of the server class
+  * Contributors: Nils Bore
+
+ -- Nils Bore <nbore@kth.se>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.3-0trusty) trusty; urgency=high
+
+  * Covered all the cases with the action server and changed the names of the recorded topics to include the camera name
+  * Contributors: Nils Bore
+
+ -- Nils Bore <nbore@kth.se>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.2-0trusty) trusty; urgency=high
+
+  * made all version numbers the same across the repo
+  * Added a launch file for launching everything together
+  * Added roslaunch axserver as run depend
+  * Added proper install targets for mongo and rosbag compression
+  * Added an action server for recording openni camera topics on demand
+  * Initial version of mongodb logger
+  * Contributors: Marc Hanheide, Nils Bore
+
+ -- Nils Bore <nbore@kth.se>  Tue, 18 Nov 2014 00:00:00 -0000
+
+ros-indigo-mongodb-openni-compression (0.0.1-0trusty) trusty; urgency=high
+
+
+
+ -- Nils Bore <nbore@kth.se>  Fri, 14 Nov 2014 00:00:00 -0000
+
+
