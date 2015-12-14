@@ -1,4 +1,4 @@
-From bd53ed80d15918695c3e3939ed8f36dbe894e03c Mon Sep 17 00:00:00 2001
+From f780d97139b539a10a0a3bf88508c5cd1c0baac9 Mon Sep 17 00:00:00 2001
 From: Marc Hanheide <marc@hanheide.net>
 Date: Wed, 25 Feb 2015 13:37:57 +0000
 Subject: [PATCH] re-added strip exclusion
@@ -8,10 +8,10 @@ Subject: [PATCH] re-added strip exclusion
  1 file changed, 3 insertions(+)
 
 diff --git a/debian/rules.em b/debian/rules.em
-index 06777bd..3edbb42 100755
+index 991c991..5c0bdd6 100755
 --- a/debian/rules.em
 +++ b/debian/rules.em
-@@ -57,3 +57,6 @@ override_dh_auto_install:
+@@ -60,3 +60,6 @@ override_dh_auto_install:
  	# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
  	if [ -f "@(InstallationPrefix)/setup.sh" ]; then . "@(InstallationPrefix)/setup.sh"; fi && \
  	dh_auto_install
