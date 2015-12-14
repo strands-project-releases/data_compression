@@ -1,4 +1,4 @@
-From ec97e5c43e869898f1a1f0d00ac5715c1edd06f1 Mon Sep 17 00:00:00 2001
+From b5d00bb046e621bc152d4f7c3cd226e44fd3727e Mon Sep 17 00:00:00 2001
 From: Marc Hanheide <marc@hanheide.net>
 Date: Wed, 25 Feb 2015 13:37:57 +0000
 Subject: [PATCH] re-added strip exclusion
